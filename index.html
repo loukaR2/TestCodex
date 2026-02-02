@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Motion — Portfolio Placeholder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise-layer" aria-hidden="true"></div>
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-a"></span>
+    <span class="blob blob-b"></span>
+    <span class="blob blob-c"></span>
+  </div>
+  <div class="cursor-light" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a class="logo" href="#top">NOVA<span>motion</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link">Hero</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <label class="demo-toggle" aria-label="Mode démo">
+          <input type="checkbox" id="demoToggle" />
+          <span>Mode démo</span>
+        </label>
+        <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+      <a href="#hero" class="mobile-link">Hero</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero" id="hero">
+      <div class="hero-content">
+        <p class="eyebrow reveal">Studio Placeholder · Motion Design</p>
+        <h1 class="headline reveal">Construire des expériences web cinématiques.</h1>
+        <p class="subtitle reveal">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Design premium, animation fluide, storytelling immersif.
+        </p>
+        <div class="hero-actions reveal">
+          <button class="btn primary">Start Project</button>
+          <button class="btn ghost">View Deck</button>
+        </div>
+      </div>
+      <div class="hero-card floating" data-tilt>
+        <div class="card-glass">
+          <p class="card-label">Floating concept</p>
+          <h3>Prototype 01</h3>
+          <p>Ultra glass UI • Depth • Soft Neon</p>
+          <div class="progress-row">
+            <span>Momentum</span>
+            <span>86%</span>
+          </div>
+          <div class="progress-bar">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-inner">
+        <div class="copy">
+          <p class="eyebrow reveal">About</p>
+          <h2 class="reveal">Une DA liquide, précise, premium.</h2>
+          <p class="reveal">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, tortor non luctus tincidunt, justo neque
+            dignissim libero, sed vulputate lacus purus vel sapien. Nullam eget ornare ipsum. Integer non ligula vitae dolor.
+          </p>
+        </div>
+        <div class="glass-card reveal" data-tilt>
+          <h3>Vision</h3>
+          <p>
+            Placeholder narrative. Cras vulputate ligula vel ipsum egestas, ut efficitur lorem suscipit. Pellentesque habitant
+            morbi tristique senectus.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Motion System</span>
+            <span class="pill">UI Lab</span>
+            <span class="pill">Creative Dev</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-inner">
+        <div class="copy">
+          <p class="eyebrow reveal">Skills</p>
+          <h2 class="reveal">Capacités modulaires &amp; adaptatives.</h2>
+          <p class="reveal">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ipsum quis luctus tincidunt.
+          </p>
+          <div class="chips reveal">
+            <span class="chip">Motion UX</span>
+            <span class="chip">WebGL Lite</span>
+            <span class="chip">Interaction Design</span>
+            <span class="chip">Creative Dev</span>
+            <span class="chip">Design Systems</span>
+          </div>
+        </div>
+        <div class="skill-bars">
+          <div class="bar reveal">
+            <div class="bar-header">
+              <span>Direction artistique</span>
+              <span data-count="92">0%</span>
+            </div>
+            <div class="bar-track"><span style="width: 92%"></span></div>
+          </div>
+          <div class="bar reveal">
+            <div class="bar-header">
+              <span>Motion design</span>
+              <span data-count="88">0%</span>
+            </div>
+            <div class="bar-track"><span style="width: 88%"></span></div>
+          </div>
+          <div class="bar reveal">
+            <div class="bar-header">
+              <span>Creative dev</span>
+              <span data-count="84">0%</span>
+            </div>
+            <div class="bar-track"><span style="width: 84%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-inner">
+        <div class="copy">
+          <p class="eyebrow reveal">Projects</p>
+          <h2 class="reveal">Sélections fictives ultra premium.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal" data-tilt>
+            <div class="project-top">
+              <h3>Glass Orbit</h3>
+              <span class="badge">Web</span>
+            </div>
+            <p>Landing immersive, depth layering, glass panels.</p>
+            <div class="tag-row">
+              <span class="tag">Motion</span>
+              <span class="tag">AI</span>
+              <span class="tag">UI</span>
+            </div>
+            <button class="btn small">View</button>
+          </article>
+          <article class="project-card reveal" data-tilt>
+            <div class="project-top">
+              <h3>Neon Drift</h3>
+              <span class="badge">Product</span>
+            </div>
+            <p>Experience premium, gradients vivants, scroll narration.</p>
+            <div class="tag-row">
+              <span class="tag">Brand</span>
+              <span class="tag">3D</span>
+              <span class="tag">UX</span>
+            </div>
+            <button class="btn small">View</button>
+          </article>
+          <article class="project-card reveal" data-tilt>
+            <div class="project-top">
+              <h3>Pulse Field</h3>
+              <span class="badge">Studio</span>
+            </div>
+            <p>Micro-interactions, blur dynamique, cards fluides.</p>
+            <div class="tag-row">
+              <span class="tag">Motion</span>
+              <span class="tag">Dev</span>
+              <span class="tag">System</span>
+            </div>
+            <button class="btn small">View</button>
+          </article>
+          <article class="project-card reveal" data-tilt>
+            <div class="project-top">
+              <h3>Nova Tides</h3>
+              <span class="badge">Concept</span>
+            </div>
+            <p>Hero cinématique, transitions slide premium.</p>
+            <div class="tag-row">
+              <span class="tag">UX</span>
+              <span class="tag">Motion</span>
+              <span class="tag">Prototype</span>
+            </div>
+            <button class="btn small">View</button>
+          </article>
+          <article class="project-card reveal" data-tilt>
+            <div class="project-top">
+              <h3>Axis Bloom</h3>
+              <span class="badge">Lab</span>
+            </div>
+            <p>Depth UI, soft neon, storytelling visuel.</p>
+            <div class="tag-row">
+              <span class="tag">UI</span>
+              <span class="tag">R&amp;D</span>
+              <span class="tag">UX</span>
+            </div>
+            <button class="btn small">View</button>
+          </article>
+          <article class="project-card reveal" data-tilt>
+            <div class="project-top">
+              <h3>Signal Bloom</h3>
+              <span class="badge">Digital</span>
+            </div>
+            <p>Interface premium, animations fluides &amp; glow.</p>
+            <div class="tag-row">
+              <span class="tag">Motion</span>
+              <span class="tag">Web</span>
+              <span class="tag">Art</span>
+            </div>
+            <button class="btn small">View</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-inner">
+        <div class="copy">
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="reveal">Créons une expérience mémorable.</h2>
+          <p class="reveal">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat dui vitae turpis pellentesque.
+          </p>
+          <div class="social-row reveal">
+            <a href="#" class="social">Dribbble</a>
+            <a href="#" class="social">Behance</a>
+            <a href="#" class="social">LinkedIn</a>
+          </div>
+        </div>
+        <form class="contact-form reveal" aria-label="Formulaire de contact">
+          <label>
+            Nom complet
+            <input type="text" placeholder="Nova Placeholder" />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="hello@placeholder.com" />
+          </label>
+          <label>
+            Message
+            <textarea placeholder="Expliquez votre idée…"></textarea>
+          </label>
+          <button class="btn primary">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 Nova Motion — Portfolio placeholder. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
